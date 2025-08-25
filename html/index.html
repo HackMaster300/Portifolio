@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-avatar">
+                <img src="../img/Zerdone Rocha.jpeg"
+                    alt="Profile" class="avatar-img">
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-section="projects">
+                    <i class="fas fa-folder"></i>
+                    <span class="nav-text">PROJETOS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-text">SOBRE</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span class="nav-text">CONTATO</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <span class="version">v1.0.0</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Geometric Background -->
+        <div class="geometric-background">
+            <div class="triangle triangle-1"></div>
+            <div class="triangle triangle-2"></div>
+            <div class="triangle triangle-3"></div>
+            <div class="triangle triangle-4"></div>
+            <div class="triangle triangle-5"></div>
+            <div class="triangle triangle-6"></div>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <!-- Adicionando foto de perfil maior na seção home -->
+                    <div class="hero-profile">
+                        <img src="../img/Zerdone Rocha.jpeg"
+                            alt="Meu Perfil" class="hero-avatar">
+                    </div>
+                    <h1 class="hero-title">Técnico de Informática | Aspirante a Especialista em Cibersegurança</h1>
+                    <p class="hero-subtitle">Ajudo a proteger e optimizar infra-estruturas de TI através de soluções práticas e um conhecimento sólido em redes, adquirido através das minhas certificações Cisco e experiência em suporte
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">+6</span>
+                            <span class="stat-label"><b>Projetos</b> <br>técnicos realizados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+4</span>
+                            <span class="stat-label"><b>Certificações Cisco</b> <br>concluídas e em progresso</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label"><b>Focado</b> em <br>Cibersegurança e Redes.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="navigateToSection('projects')">
+                            Ver Projetos
+                        </button>
+                        <button class="btn btn-secondary" onclick="navigateToSection('contact')">
+                            Entre em Contato
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="projects-layout">
+                <div class="projects-content">
+                    <!-- Adicionando scroll próprio para a área de detalhes dos projetos -->
+                    <div class="project-details-scroll" id="projectDetails">
+                        <div class="empty-state">
+                            <i class="fas fa-folder-open"></i>
+                            <h3>Selecione um projeto</h3>
+                            <p>Escolha um projeto da lista para ver os detalhes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-sidebar">
+                    <div class="projects-header">
+                        <h3>Projetos</h3>
+                        <!-- O botao de adicionar esta desabilitado pois o portifolio ainda não tem Database e não faz sentido qualquer um poder colocar um projecto no meu portifolio -->
+
+
+                        
+                        <!-- <button class="btn btn-small" id="addProjectBtn">
+                            <i class="fas fa-plus"></i>
+                            Adicionar
+                        </button> -->
+                    </div>
+                    <!-- Adicionando scroll próprio para a lista de projetos -->
+                    <div class="projects-list-scroll">
+                        <div class="projects-list" id="projectsList">
+                            <!-- Projects will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <h2>Sobre Mim</h2>
+                <p>Sou um profissional de TI formado em Engenharia Informática e Telecomunicações, com uma paixão por transformar desafios técnicos em soluções eficientes. A minha jornada começou no suporte técnico hands-on, onde desenvolvi uma base sólida em troubleshooting e infraestrutura de rede, e agora estou a focar-me intensivamente na minha transição para a área de Cibersegurança.</p>
+
+                <p>Para acelerar esta transição, investi na minha educação através do programa de certificações da Cisco, onde adquiri conhecimentos fundamentais e práticos em conceitos de rede (TCP/IP, LAN, WAN), cibersegurança e operações de segurança. Possuo experiência prática em ferramentas como Cisco Packet Tracer e estou sempre a ampliar os meus conhecimentos através de labs online como o TryHackMe.</p>
+
+                <p>Estou a procurar a minha primeira oportunidade desafiadora numa função de Analista de SOC Júnior, Técnico de Redes ou numa posição de Suporte Especializado com foco em segurança, onde possa aplicar a minha paixão por resolver problemas e a minha sede de aprender para contribuir para a protecção de assets digitais.</p>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-js-square"></i>
+                        <h4>JavaScript</h4>
+                        <p>Desenvolvimento frontend</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h4>Python</h4>
+                        <p>Scripting e automação</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h4>Redes</h4>
+                        <p>Cisco Packet Tracer, TCP/IP, LAN/WAN, Troubleshooting</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h4>Sistemas</h4>
+                        <p>Windows, Linux</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-shield"></i>
+                        <h4>segurança</h4>
+                        <p>Fundamentos de cibersegurança, inteligência de ameaças</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h4>Ferramentas</h4>
+                        <p>Wireshark, Git, GitHub, VS code, V0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-content">
+                <h2>Entre em Contato</h2>
+                <p>Vamos trabalhar juntos no seu próximo projeto!</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:zerdone2301@gmail.com">zerdone2301@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span><a href="https://www.linkedin.com/in/zerdone-rocha-76b715332">Zerdone Rocha</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/HackMaster300">github.com/HackMaster300</a></span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text"  id="ContactName" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="ContactEmail" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" id="ContactMsg" required></textarea>
+                    </div>
+                    <button type="submit" id="ContactBtn" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Project Modal -->
+    <div class="modal" id="addProjectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Adicionar Novo Projeto</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <form id="addProjectForm">
+                <div class="form-group">
+                    <label>Nome do Projeto</label>
+                    <input type="text" id="projectName" required>
+                </div>
+                <div class="form-group">
+                    <label>Descrição</label>
+                    <textarea id="projectDescription" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Motivação</label>
+                    <textarea id="projectMotivation" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Desafios</label>
+                    <textarea id="projectChallenges" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Resultados</label>
+                    <textarea id="projectResults" rows="3" required></textarea>
+                </div>
+                <!-- Adicionando seleção de tecnologias com categorias -->
+                <div class="form-group">
+                    <label>Tecnologias</label>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h5>Frontend</h5>
+                            <select id="frontendTech" multiple>
+                                <option value="React">React</option>
+                                <option value="Vue.js">Vue.js</option>
+                                <option value="Angular">Angular</option>
+                                <option value="HTML5">HTML5</option>
+                                <option value="CSS3">CSS3</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="TypeScript">TypeScript</option>
+                                <option value="Tailwind CSS">Tailwind CSS</option>
+                                <option value="Bootstrap">Bootstrap</option>
+                            </select>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Backend</h5>
+                            <select id="backendTech" multiple>
+                                <option value="Node.js">Node.js</option>
+                                <option value="Express">Express</option>
+                                <option value="Django">Django</option>
+                                <option value="Flask">Flask</option>
+                                <option value="FastAPI">FastAPI</option>
+                                <option value="Spring Boot">Spring Boot</option>
+                                <option value="Laravel">Laravel</option>
+                                <option value="Ruby on Rails">Ruby on Rails</option>
+                            </select>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Database</h5>
+                            <select id="databaseTech" multiple>
+                                <option value="MongoDB">MongoDB</option>
+                                <option value="PostgreSQL">PostgreSQL</option>
+                                <option value="MySQL">MySQL</option>
+                                <option value="Redis">Redis</option>
+                                <option value="SQLite">SQLite</option>
+                                <option value="Firebase">Firebase</option>
+                                <option value="Supabase">Supabase</option>
+                            </select>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Cloud & DevOps</h5>
+                            <select id="cloudTech" multiple>
+                                <option value="AWS">AWS</option>
+                                <option value="Azure">Azure</option>
+                                <option value="Google Cloud">Google Cloud</option>
+                                <option value="Vercel">Vercel</option>
+                                <option value="Netlify">Netlify</option>
+                                <option value="Docker">Docker</option>
+                                <option value="Kubernetes">Kubernetes</option>
+                            </select>
+                        </div>
+                        <div class="tech-category">
+                            <h5>IA & Machine Learning</h5>
+                            <select id="aiTech" multiple>
+                                <option value="OpenAI">OpenAI</option>
+                                <option value="TensorFlow">TensorFlow</option>
+                                <option value="PyTorch">PyTorch</option>
+                                <option value="Scikit-learn">Scikit-learn</option>
+                                <option value="Hugging Face">Hugging Face</option>
+                                <option value="LangChain">LangChain</option>
+                                <option value="Anthropic">Anthropic</option>
+                            </select>
+                        </div>
+                        <div class="tech-category">
+                            <h5>Outras</h5>
+                            <select id="otherTech" multiple>
+                                <option value="Git">Git</option>
+                                <option value="GitHub">GitHub</option>
+                                <option value="Stripe">Stripe</option>
+                                <option value="Socket.io">Socket.io</option>
+                                <option value="GraphQL">GraphQL</option>
+                                <option value="REST API">REST API</option>
+                                <option value="Webpack">Webpack</option>
+                                <option value="Vite">Vite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="selected-technologies" id="selectedTechnologies">
+                        <h5>Tecnologias Selecionadas:</h5>
+                        <div class="selected-tech-tags" id="selectedTechTags"></div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Adicionar Projeto</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Script/script.js"></script>
+</body>
+
+</html>
