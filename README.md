@@ -62,10 +62,10 @@ https://hackmaster300.github.io/Portifolio/html
 Execução Local
 bash
 # Clone o repositório
-git clone https://github.com/HackMaster300/seu-repositorio.git
+git clone https://github.com/HackMaster300/Portifolio.git
 
 # Entre no diretório
-cd seu-repositorio
+cd Portifolio/html
 
 # Abra o arquivo principal
 open index.html
@@ -123,7 +123,6 @@ Repositório configurado para GitHub Pages
 
 Branch main como fonte
 
-Acesso via https://username.github.io/repository
 
 🤝 Contribuindo
 Contribuições são bem-vindas! Para contribuir:
@@ -174,9 +173,7 @@ Tecnologias: HTML5, CSS3, JavaScript, LocalStorage
 
 Destaque: Design futurista com animações CSS complexas
 
-<div align="center">
+
 ⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!
 
-https://img.shields.io/github/stars/HackMaster300/seu-repositorio?style=social
-
-</div> ```
+https://img.shields.io/github/stars/HackMaster300/seu-repositorio?style=social ```
