@@ -174,6 +174,4 @@ Tecnologias: HTML5, CSS3, JavaScript, LocalStorage
 Destaque: Design futurista com animações CSS complexas
 
 
-⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!
-
-https://img.shields.io/github/stars/HackMaster300/seu-repositorio?style=social ```
+⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!  ```
