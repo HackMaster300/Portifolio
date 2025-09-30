@@ -11,7 +11,7 @@
 
 Portfólio pessoal desenvolvido com foco em **design moderno** e **experiência do usuário excepcional**. O projeto apresenta uma interface futurista com animações geométricas, sistema de gerenciamento de projetos e design totalmente responsivo.
 
-**Live Demo**: [🔗 Acesse o Portfólio](https://hackmaster300.github.io/seu-repositorio)
+**Live Demo**: [🔗 Acesse o Portfólio](https://hackmaster300.github.io/Portifolio/html/)
 
 ### ✨ Funcionalidades Principais
 
