@@ -1,3 +1,4 @@
+
 # 🚀 Portfólio Pessoal Interativo
 
 > Um portfólio moderno e responsivo desenvolvido para demonstrar habilidades técnicas em desenvolvimento web e cibersegurança
@@ -20,6 +21,7 @@ Portfólio pessoal desenvolvido com foco em **design moderno** e **experiência 
 - ✅ **Sistema de Projetos** - Gerenciamento dinâmico com localStorage
 - ✅ **Animações CSS** - Elementos geométricos flutuantes e transições
 - ✅ **Formulário de Contato** - Integração direta com cliente de email
+- ✅ **Modo Escuro** - Tema dark moderno e elegante
 - ✅ **Performance Otimizada** - Carregamento rápido e eficiente
 
 ## 🛠️ Tecnologias Utilizadas
@@ -40,16 +42,16 @@ Portfólio pessoal desenvolvido com foco em **design moderno** e **experiência 
 - **UX/UI** - Navegação intuitiva e acessível
 
 ## 📦 Estrutura do Projeto
+```bash
 portfolio/
-├── html
-├ └── index.html # Página principal
+├── index.html # Página principal
 ├── CSS/
 │ └── styles.css # Estilos principais
 ├── Script/
 │ └── script.js # Lógica da aplicação
 ├── img/ # Imagens e favicons
 └── README.md # Documentação
-
+```
 text
 
 ## 🎯 Como Usar
@@ -58,14 +60,14 @@ text
 O projeto está disponível no GitHub Pages:
 ```bash
 # Acesse diretamente
-https://hackmaster300.github.io/Portifolio/html
+https://hackmaster300.github.io/seu-repositorio
 Execução Local
 bash
 # Clone o repositório
-git clone https://github.com/HackMaster300/Portifolio.git
+git clone https://github.com/HackMaster300/seu-repositorio.git
 
 # Entre no diretório
-cd Portifolio/html
+cd seu-repositorio
 
 # Abra o arquivo principal
 open index.html
@@ -121,8 +123,9 @@ O deploy é automático via GitHub Pages:
 
 Repositório configurado para GitHub Pages
 
-Branch main como fonte
+Branch main ou gh-pages como fonte
 
+Acesso via https://username.github.io/repository
 
 🤝 Contribuindo
 Contribuições são bem-vindas! Para contribuir:
@@ -143,13 +146,10 @@ Distribuído sob licença MIT. Veja LICENSE para mais informações.
 👤 Autor
 Zerdone Rocha
 
-📧 Email: zerdone2301@gmail.com
-
 💼 LinkedIn: Zerdone Rocha
 
 🐙 GitHub: HackMaster300
 
-🌐 Portfólio: https://hackmaster300.github.io/Portifolio/html/
 
 🌟 Projetos em Destaque
 🔒 Ferramenta de Pentest Interativa
@@ -172,6 +172,9 @@ Descrição: Este projeto - site portfólio moderno e responsivo
 Tecnologias: HTML5, CSS3, JavaScript, LocalStorage
 
 Destaque: Design futurista com animações CSS complexas
+```
+<div align="center">
+⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!
+</div> 
 
 
-⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!  ```
