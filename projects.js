@@ -15,6 +15,7 @@ window.PROJECTS = [
     "problem": "O tratamento de tentativas de PIN exigia passos manuais repetitivos em vários portais.",
     "solution": "Robot que orquestra três portais web e trata o reset de forma automática, com política de negócio configurável e verificação posterior.",
     "decisions": [
+      "Impacto (estimativa interna): tarefa que ocupava uma equipa de 4 pessoas a tempo inteiro passou a correr sozinha, todos os dias, com capacidade cerca de 7 vezes superior à manual.",
       "Idempotência e retoma por checkpoints, para recuperar execuções interrompidas sem repetir trabalho.",
       "Schema SQL versionado como projecto DACPAC, com testes de paridade face ao EF Core.",
       "Credenciais e dados sensíveis cifrados com AES-GCM; ficheiros intermédios sensíveis não persistem em disco.",
@@ -38,6 +39,7 @@ window.PROJECTS = [
     "problem": "A recolha e reconciliação de journais de ATM era um processo manual.",
     "solution": "Robot que extrai os journais de um portal web, converte-os, reconcilia-os com outro sistema e envia relatórios.",
     "decisions": [
+      "Impacto (estimativa interna): um ciclo que exigia várias pessoas durante 2 dias passou a concluir-se em menos de 1 dia, sem intervenção humana.",
       "Armazenamento multi-protocolo (SMB, SFTP, FTP) com fallback e retentativas.",
       "Checkpoints por ATM e recuperação após falhas.",
       "Auditoria de execuções, etapas e eventos.",
@@ -61,6 +63,7 @@ window.PROJECTS = [
     "problem": "A conciliação de transacções entre dois sistemas e o reporte eram manuais e sem monitorização.",
     "solution": "Serviço que concilia movimentos, produz relatórios Excel, envia dados consolidados a uma API interna com fila de reenvio e expõe um dashboard em tempo real.",
     "decisions": [
+      "Impacto: passou a existir um controlo que antes não se fazia, concluído em cerca de 4 horas; o equivalente manual levaria cerca de 2 dias.",
       "Agendador diário com relógio de negócio e reexecução configurável.",
       "Escrita de Excel em streaming e esperas dinâmicas para reduzir tempos.",
       "Configuração por ambiente e base de dados criada e validada pelo DACPAC."
