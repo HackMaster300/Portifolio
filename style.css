@@ -1,0 +1,31 @@
+:root{--bg:#fff;--fg:#1a1d21;--muted:#5a6370;--line:#dfe3e8;--accent:#0b5cad;--card:#f5f7fa}
+@media (prefers-color-scheme:dark){:root{--bg:#14171b;--fg:#e8eaed;--muted:#a0a8b3;--line:#2c3139;--accent:#6fb1f2;--card:#1c2026}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.top,main,footer{max-width:1040px;margin:0 auto;padding:0 16px}
+.top{padding-top:40px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:2rem}
+.role{margin:.2rem 0 .8rem;color:var(--accent);font-weight:600}
+.sum{max-width:62ch;margin:0 0 1rem}
+nav a{margin-right:1rem}
+h2{margin:2rem 0 .5rem;font-size:1.3rem}
+.note{color:var(--muted);font-size:.9rem;margin:0 0 1rem}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:20px;align-items:start}
+.list{list-style:none;margin:0;padding:0}
+.list .grp{margin:1rem 0 .3rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.list .grp:first-child{margin-top:0}
+.list button{display:block;width:100%;text-align:left;padding:10px 12px;margin-bottom:4px;background:transparent;color:inherit;border:1px solid var(--line);border-radius:6px;font:inherit;cursor:pointer}
+.list button:hover{background:var(--card)}
+.list button[aria-current="true"]{border-color:var(--accent);background:var(--card);font-weight:600}
+.detail{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px;min-height:200px}
+.detail h3{margin:0 0 .3rem;font-size:1.3rem}
+.badge{display:inline-block;font-size:.8rem;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.detail h4{margin:1.2rem 0 .2rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.detail p,.detail ul{margin:.2rem 0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;list-style:none}
+.tags li{font-size:.8rem;padding:2px 8px;background:var(--bg);border:1px solid var(--line);border-radius:4px}
+.stack dt{font-weight:600;margin-top:.7rem}
+.stack dd{margin:0;color:var(--muted)}
+footer{padding:2rem 16px;margin-top:2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:720px){.layout{grid-template-columns:1fr}}

@@ -1,39 +1,9 @@
-# Portfólio (versão anterior)
+# Portfólio — Zerdone Rocha
 
-> Este repositório contém a **versão anterior** do meu portfólio, orientada a redes e cibersegurança. Foi substituída por um novo portfólio focado em desenvolvimento .NET, RPA e IA. Mantém-se apenas como referência.
+Portfólio de Zerdone Rocha: automação bancária (RPA) em .NET, plataformas backend e ferramentas de engenharia com IA.
 
-Demo (GitHub Pages): https://hackmaster300.github.io/Portifolio/html/
+Site estático (HTML, CSS e JavaScript, sem dependências). Os projectos estão em `projects.js`.
 
-## O que é
+Online: https://hackmaster300.github.io/Portifolio/
 
-Site de página única, feito em HTML, CSS e JavaScript sem frameworks:
-
-- Barra lateral colapsável e navegação entre 4 secções (Início, Projectos, Sobre, Contacto)
-- Vista de projectos com lista e painel de detalhe (descrição, motivação, desafios, resultados, tecnologias)
-- Formulário de contacto que abre o cliente de email (`mailto:`)
-- Fundo com formas geométricas animadas em CSS, tema escuro, layout responsivo
-- Ícones Font Awesome (CDN)
-
-## Estrutura
-
-```
-html/index.html     página
-CSS/styles.css      estilos
-Script/script.js    lógica (projectos, navegação, contacto)
-img/                foto e ícones
-```
-
-## Executar
-
-Abra `html/index.html` no browser ou use `python -m http.server`.
-
-## Notas e limitações
-
-- A lista de projectos é guardada em `localStorage` na primeira visita; quem já visitou pode ver uma lista desactualizada até limpar os dados do site.
-- Algumas métricas dos projectos (por exemplo percentagens de redução de tempo) são estimativas e não têm medição documentada.
-- Parte da interface foi gerada com apoio de uma ferramenta de IA (v0) e depois ajustada manualmente.
-- Sem SEO (sem meta description nem Open Graph) e sem testes.
-
-## Licença
-
-MIT. Ver `LICENSE`.
+A versão antiga (orientada a cibersegurança) está no histórico do repositório.
