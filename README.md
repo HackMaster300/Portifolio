@@ -1,180 +1,39 @@
+# Portfólio (versão anterior)
 
-# 🚀 Portfólio Pessoal Interativo
+> Este repositório contém a **versão anterior** do meu portfólio, orientada a redes e cibersegurança. Foi substituída por um novo portfólio focado em desenvolvimento .NET, RPA e IA. Mantém-se apenas como referência.
 
-> Um portfólio moderno e responsivo desenvolvido para demonstrar habilidades técnicas em desenvolvimento web e cibersegurança
+Demo (GitHub Pages): https://hackmaster300.github.io/Portifolio/html/
 
-![GitHub pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Tecnologias](https://img.shields.io/badge/tech-HTML%2FCSS%2FJS-orange)
+## O que é
 
-## 📖 Sobre o Projeto
+Site de página única, feito em HTML, CSS e JavaScript sem frameworks:
 
-Portfólio pessoal desenvolvido com foco em **design moderno** e **experiência do usuário excepcional**. O projeto apresenta uma interface futurista com animações geométricas, sistema de gerenciamento de projetos e design totalmente responsivo.
+- Barra lateral colapsável e navegação entre 4 secções (Início, Projectos, Sobre, Contacto)
+- Vista de projectos com lista e painel de detalhe (descrição, motivação, desafios, resultados, tecnologias)
+- Formulário de contacto que abre o cliente de email (`mailto:`)
+- Fundo com formas geométricas animadas em CSS, tema escuro, layout responsivo
+- Ícones Font Awesome (CDN)
 
-**Live Demo**: [🔗 Acesse o Portfólio](https://hackmaster300.github.io/Portifolio/html/)
+## Estrutura
 
-### ✨ Funcionalidades Principais
-
-- ✅ **Design Responsivo** - Adaptável para todos os dispositivos
-- ✅ **Navegação Lateral Interativa** - Menu colapsável com animações suaves
-- ✅ **Sistema de Projetos** - Gerenciamento dinâmico com localStorage
-- ✅ **Animações CSS** - Elementos geométricos flutuantes e transições
-- ✅ **Formulário de Contato** - Integração direta com cliente de email
-- ✅ **Modo Escuro** - Tema dark moderno e elegante
-- ✅ **Performance Otimizada** - Carregamento rápido e eficiente
-
-## 🛠️ Tecnologias Utilizadas
-
-### Frontend
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilos avançados com Grid e Flexbox
-- **JavaScript ES6+** - Interatividade e lógica de aplicação
-
-### Bibliotecas & Ferramentas
-- **Font Awesome** - Ícones profissionais
-- **LocalStorage API** - Persistência de dados no navegador
-- **CSS Animations** - Animações personalizadas
-
-### Design
-- **Design System** - Cores gradientes e tipografia consistente
-- **Responsive Design** - Mobile-first approach
-- **UX/UI** - Navegação intuitiva e acessível
-
-## 📦 Estrutura do Projeto
-```bash
-portfolio/
-├── index.html # Página principal
-├── CSS/
-│ └── styles.css # Estilos principais
-├── Script/
-│ └── script.js # Lógica da aplicação
-├── img/ # Imagens e favicons
-└── README.md # Documentação
 ```
-text
-
-## 🎯 Como Usar
-
-### Acesso Online
-O projeto está disponível no GitHub Pages:
-```bash
-# Acesse diretamente
-https://hackmaster300.github.io/seu-repositorio
-Execução Local
-bash
-# Clone o repositório
-git clone https://github.com/HackMaster300/seu-repositorio.git
-
-# Entre no diretório
-cd seu-repositorio
-
-# Abra o arquivo principal
-open index.html
-# ou
-start index.html  # Windows
-Navegação
-Home: Apresentação pessoal e estatísticas
-
-Projetos: Portfólio de trabalhos técnicos
-
-Sobre: Informações profissionais e habilidades
-
-Contato: Formulário de comunicação direta
-
-🏗️ Funcionalidades Técnicas
-Sistema de Projetos
-Armazenamento local no navegador
-
-Categorização automática de tecnologias
-
-Cards interativos com detalhes completos
-
-Interface de visualização moderna
-
-Design System
-css
-/* Cores principais */
---primary: #8b5cf6;      /* Roxo */
---secondary: #ec4899;    /* Rosa */
---accent: #f59e0b;       /* Laranja */
---background: #0a0a0f;   /* Fundo escuro */
-Animações
-Triângulos geométricos flutuantes
-
-Transições suaves entre seções
-
-Efeitos hover interativos
-
-Animações de entrada (fadeIn)
-
-📱 Responsividade
-O projeto é totalmente responsivo com breakpoints para:
-
-Mobile: < 768px
-
-Tablet: 768px - 1024px
-
-Desktop: > 1024px
-
-🚀 Deploy
-GitHub Pages
-O deploy é automático via GitHub Pages:
-
-Repositório configurado para GitHub Pages
-
-Branch main ou gh-pages como fonte
-
-Acesso via https://username.github.io/repository
-
-🤝 Contribuindo
-Contribuições são bem-vindas! Para contribuir:
-
-Fork o projeto
-
-Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-
-Commit suas mudanças (git commit -m 'Add AmazingFeature')
-
-Push para a branch (git push origin feature/AmazingFeature)
-
-Abra um Pull Request
-
-📄 Licença
-Distribuído sob licença MIT. Veja LICENSE para mais informações.
-
-👤 Autor
-Zerdone Rocha
-
-💼 LinkedIn: Zerdone Rocha
-
-🐙 GitHub: HackMaster300
-
-
-🌟 Projetos em Destaque
-🔒 Ferramenta de Pentest Interativa
-Descrição: CLI em Python para automação de ferramentas de pentest
-
-Tecnologias: Python, Nmap, ARP-Scan, Hydra
-
-Destaque: Interface unificada para múltiplas ferramentas de segurança
-
-🤖 Sistema de Automação CMS
-Descrição: Automação de processos em sistemas de gestão com OCR
-
-Tecnologias: Python, PyAutoGUI, Tesseract OCR
-
-Destaque: Redução de 90% no tempo de processamento
-
-⚡ Portfólio Interativo
-Descrição: Este projeto - site portfólio moderno e responsivo
-
-Tecnologias: HTML5, CSS3, JavaScript, LocalStorage
-
-Destaque: Design futurista com animações CSS complexas
+html/index.html     página
+CSS/styles.css      estilos
+Script/script.js    lógica (projectos, navegação, contacto)
+img/                foto e ícones
 ```
-<div align="center">
-⭐️ Se este projeto te ajudou, considere dar uma estrela no repositório!
-</div> 
 
+## Executar
 
+Abra `html/index.html` no browser ou use `python -m http.server`.
+
+## Notas e limitações
+
+- A lista de projectos é guardada em `localStorage` na primeira visita; quem já visitou pode ver uma lista desactualizada até limpar os dados do site.
+- Algumas métricas dos projectos (por exemplo percentagens de redução de tempo) são estimativas e não têm medição documentada.
+- Parte da interface foi gerada com apoio de uma ferramenta de IA (v0) e depois ajustada manualmente.
+- Sem SEO (sem meta description nem Open Graph) e sem testes.
+
+## Licença
+
+MIT. Ver `LICENSE`.
